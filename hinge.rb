@@ -5,11 +5,11 @@
 class Hinge < Formula
   desc ""
   homepage "https://github.com/pacoguzman/hinge"
-  version "2.0.1"
+  version "2.0.2"
 
   on_macos do
-    url "https://github.com/pacoguzman/hinge/releases/download/v2.0.1/hinge_2.0.1_darwin_all.tar.gz"
-    sha256 "7c57dbf4fe448f889f5a78b1d6c3bdc4435e51544b776278f45ded7aa6e9b995"
+    url "https://github.com/pacoguzman/hinge/releases/download/v2.0.2/hinge_2.0.2_darwin_all.tar.gz"
+    sha256 "20fa4a3541acfd16c6ed4d433d6694753fb10e7d38270d95dd2a88c50ab7e985"
 
     def install
       bin.install "hinge"
@@ -18,16 +18,16 @@ class Hinge < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pacoguzman/hinge/releases/download/v2.0.1/hinge_2.0.1_linux_arm64.tar.gz"
-      sha256 "a2b5c468e289fbe1d9cca26b685c8326d5ab05e8ceaa74e9cb6f949804c950a6"
+      url "https://github.com/pacoguzman/hinge/releases/download/v2.0.2/hinge_2.0.2_linux_arm64.tar.gz"
+      sha256 "c53266fbffd28f25be9f43c53a53dbe20f277190be2de127d049186f7d6ab130"
 
       def install
         bin.install "hinge"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pacoguzman/hinge/releases/download/v2.0.1/hinge_2.0.1_linux_amd64.tar.gz"
-      sha256 "7dbcf35f7ea30c0d566882b983df388d9fda77e6fd65e78d821edc94ef6caafc"
+      url "https://github.com/pacoguzman/hinge/releases/download/v2.0.2/hinge_2.0.2_linux_amd64.tar.gz"
+      sha256 "fe40232f1282dd192816825eb504aa728ffad0b487933fb8da4f7e9d49746076"
 
       def install
         bin.install "hinge"
